@@ -1,0 +1,7 @@
+# OS generate files
+.DS_Store
+*.swp
+
+# InteliJ tool file
+*.iml
+**/.idea/
