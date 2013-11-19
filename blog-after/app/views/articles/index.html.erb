@@ -3,7 +3,7 @@
 <% for article in @articles %>
   <h2><%= link_to article.name, article %></h2>
   <p><%= article.content %></p>
-  <p><%= link_to "Open Slide", "/output/#{article.name}.html" %> </p>
+  <p><%= link_to "슬라이드로 보기", "/output/#{article.name}.html" %> </p>
 <% end %>
 
-<p><%= link_to "New Article", new_article_path %></p>
+<p><%= link_to "새 글쓰기", new_article_path %></p>
