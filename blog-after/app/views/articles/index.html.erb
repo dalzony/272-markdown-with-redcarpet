@@ -3,6 +3,7 @@
 <% for article in @articles %>
   <h2><%= link_to article.name, article %></h2>
   <p><%= article.content %></p>
+  <p><%= link_to "Open Slide", "/output/#{article.name}.html" %> </p>
 <% end %>
 
 <p><%= link_to "New Article", new_article_path %></p>
