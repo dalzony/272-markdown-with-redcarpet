@@ -1,7 +1,6 @@
 <% title @article.name %>
 
-<%= markdown(@article.content) %>
-
+<%= @article.content %>
 <p>
     <%= link_to "슬라이드로 보기", "/output/#{@article.name}.html" %>
     <%= link_to "편집", edit_article_path(@article) %> |

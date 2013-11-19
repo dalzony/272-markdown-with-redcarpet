@@ -7,6 +7,8 @@ class Article < ActiveRecord::Base
 
     f.write(self.content.to_s)
     f.close
+
+    system ("slideshow build ./mkd/#{self.name} -o ./public/output")
   end
 
 end
