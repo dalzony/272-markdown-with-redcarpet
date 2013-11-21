@@ -1,6 +1,6 @@
 <% title @article.name %>
 
-<%= markdown(@article.content) %>
+<%=  raw markdown(@article.content) %>
 
 <p>
     <%= link_to "슬라이드로 보기", "/output/#{@article.name}.html" %>
