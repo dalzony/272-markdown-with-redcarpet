@@ -1,9 +1,10 @@
 <% title @article.name %>
 
-<%= @article.content %>
+<%= markdown(@article.content) %>
+
 <p>
     <%= link_to "슬라이드로 보기", "/output/#{@article.name}.html" %>
     <%= link_to "편집", edit_article_path(@article) %> |
-    <%= link_to "삭제", @article, :confirm => 'Are you sure?', :method => :delete %> |
+    <%= link_to "삭제", @article, :confirm => '삭제하시겠습니까?', :method => :delete %> |
     <%= link_to "목록으로", articles_path %>
 </p>
