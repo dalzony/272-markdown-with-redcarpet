@@ -9,3 +9,5 @@ gem 'albino'
 gem 'nokogiri'
 
 gem 'slideshow'
+
+gem 'devise'
